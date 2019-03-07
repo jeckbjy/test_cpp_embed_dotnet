@@ -1,0 +1,4 @@
+.vscode/
+bin/
+src/ManagedLibrary/bin/
+src/ManagedLibrary/obj/

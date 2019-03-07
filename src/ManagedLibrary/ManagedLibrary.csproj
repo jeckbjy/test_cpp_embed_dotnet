@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <!-- Although this project is not used as an exe (it's not the process's entry point),
+         it is built as an exe so that publishing it will include the .NET Core runtime and
+         framework libraries for use by the host -->
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <!-- <TargetFramework>netcoreapp2.1</TargetFramework> -->
+    <!-- <TargetFramework>netstandard2.0</TargetFramework> -->
+  </PropertyGroup>
+
+</Project>
