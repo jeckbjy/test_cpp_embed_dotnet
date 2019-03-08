@@ -97,7 +97,7 @@ int main(int argc, char** argv) {
 
     // STEP 1: Load CoreCLR (coreclr.dll/libcoreclr.so)
     // const char* libcoreclr = "/usr/local/share/dotnet/shared/Microsoft.NETCore.App/2.0.0/libcoreclr.dylib";
-    HMODULE coreClr = DYNLIB_LOAD(CORECLR_FILE_NAME);
+    HMODULE coreClr = DYNLIB_LOAD(coreClrPath.c_str());
     if (coreClr == NULL){
         printf("ERROR: Failed to load CoreCLR from %s\n", CORECLR_FILE_NAME);
         return -1;

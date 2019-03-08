@@ -10,8 +10,7 @@
   - 运行: ./host /usr/local/share/dotnet/shared/Microsoft.NETCore.App/2.0.0/
 
 - 问题:
-  - .csproj中选择netcoreapp2.0以上可以正常测试，但是会拷贝很多dll到bin目录下
-  - .csproj中选择netcoreapp2.0运行时会报错,但是只会生成一个ManagedLibrary.dll
+  - 只有OutputType为Exe模式,并且netcoreapp为3.0才能正常运行,这样会拷贝所有dll到生成目录,其他都不会拷贝,运行时会报错
 
 - 参考:
   - https://yizhang82.dev/hosting-coreclr
